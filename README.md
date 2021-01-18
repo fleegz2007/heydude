@@ -19,20 +19,20 @@ How to use this program
 - Open the newly named config.py file 
 - Register your application with reddit:
 
-    Login to reddit and go to https://www.reddit.com/prefs/apps/
-    At the bottom of the page select "create another app"
-        Give the application a name
-        Select "Script"
-        Give your application a description
-        input a redirect uri. This is not really relevant for the program - I used the following: http://www.example.com/unused/redirect/uri
-        Once complete, a new developed application will generate.
-            Under "personal use script" is an ID. Input this ID as the clientid variable in the config.py
-            The "secret" is your personal token. Input this ID as the clientsecret variable in the config.py
-        User agent is the way reddit can recognize you as you are using your app. Typically it would be something like "appname by u/{your user name}"
+    - Login to reddit and go to https://www.reddit.com/prefs/apps/
+    - At the bottom of the page select "create another app"
+        - Give the application a name
+        - Select "Script"
+        - Give your application a description
+        - input a redirect uri. This is not really relevant for the program - I used the following: http://www.example.com/unused/redirect/uri
+        - Once complete, a new developed application will generate.
+            - Under "personal use script" is an ID. Input this ID as the clientid variable in the config.py
+            - The "secret" is your personal token. Input this ID as the clientsecret variable in the config.py
+        - User agent is the way reddit can recognize you as you are using your app. Typically it would be something like "appname by u/{your user name}"
 
 - Input the subreddit you would like to access as the subreddit variable in config.py. The subreddit name should be the same as the subreddit in the URL
 
-    Example: https://www.reddit.com/r/EDCexchange --in this example, the subreddit would be 'EDCexchange'
+    - Example: https://www.reddit.com/r/EDCexchange --in this example, the subreddit would be 'EDCexchange'
 
 
 - Input the name of the product you would like to search for in the searchname variable in config.py. This would be the exact, case sensitive search you would use in the subreddit.
@@ -40,4 +40,4 @@ How to use this program
 - Input the password that the email would be coming from in the from password variable.
 - Input the email address the email will be going to in the toemail variable
 
-Youre all set! Enjoy your new products.
+- Youre all set! Enjoy your new products.
