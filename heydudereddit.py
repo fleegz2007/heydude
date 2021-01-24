@@ -58,6 +58,11 @@ connection = sqlite3.connect("redditswaps.db",
                             sqlite3.PARSE_COLNAMES )
 cursor = connection.cursor()
 
+tableCheck = cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name = ?;", ('swapdata',)).fetchall()
+if tableCheck == []:
+    cursor.execute("CREATE TABLE swapdata (id TEXT PRIMARY KEY, createddate TIMESTAMP, flair TEXT, title TEXT, url TEXT, tmstmp TIMESTAMP);")
+
+
 sendlist = {"submission_id": [], "created_date": [], "flair": [], "title": [], "url": []}
 
 
