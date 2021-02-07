@@ -65,6 +65,7 @@ if tableCheck == []:
 
 sendlist = {"submission_id": [], "created_date": [], "flair": [], "title": [], "url": []}
 
+#cursor.execute("DELETE FROM swapdata WHERE id LIKE 'kfhebe'")
 
 for i in range(len(submissions["submission_id"])):
     id = submissions["submission_id"][i]
@@ -101,7 +102,7 @@ else:
     html = '''\
     <html>
     <body>
-            <p>Hey,<br>
+            <p>Hey dude,<br>
             Check out these links for new {} postings on {}!<br>
             {}
             </p>
